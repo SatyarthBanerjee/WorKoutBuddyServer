@@ -6,7 +6,7 @@ const PORT = process.env.PORT;
 const url = process.env.MONGO_URI
 const mongoose = require("mongoose")
 const allroutes = require("../server/Routes/route")
-app.use(cors());
+app.use(cors({origin:"*"}));
 app.use(express.json())
 app.use(allroutes)
 mongoose.connect(url).then(()=>{
