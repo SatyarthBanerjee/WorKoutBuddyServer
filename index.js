@@ -8,7 +8,7 @@ const mongoose = require("mongoose")
 const allroutes = require("../server/Routes/route")
 app.use(cors());
 app.use(cors({
-      origin: 'https://wor-kout-buddy-server.vercel.app/', // Replace with your frontend's deployed URL
+      origin: 'https://workout-buddy-frontend-gules.vercel.app', // Replace with your frontend's deployed URL
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       credentials: true // Enable cookies (if needed)
     }));
